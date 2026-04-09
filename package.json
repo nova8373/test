@@ -1,0 +1,11 @@
+{
+  "name": "realtime-notification-system",
+  "private": true,
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.29.3",
+  "scripts": {
+    "dev": "pnpm --parallel --filter server --filter client dev",
+    "build": "pnpm --filter client build",
+    "start": "pnpm --filter server start"
+  }
+}
