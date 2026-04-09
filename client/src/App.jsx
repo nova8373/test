@@ -12,10 +12,8 @@ import {
 
 const MAX_TOASTS = 4;
 const MAX_EVENTS = 12;
-const FALLBACK_WS_URL = import.meta.env.DEV
-  ? "ws://test-e39m.onrender.com"
-  : `${window.location.protocol === "https:" ? "wss" : "ws"}://${window.location.host}`;
-const WS_URL = import.meta.env.VITE_WS_URL ?? FALLBACK_WS_URL;
+const FALLBACK_WS_URL ="wss://test-e39m.onrender.com"
+const WS_URL = "wss://test-e39m.onrender.com"
 
 const createToast = (tone, title, message) => ({
   id: crypto.randomUUID(),
